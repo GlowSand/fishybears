@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "glowsand.fishybears.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BearMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "fishybears",
+  "version": "${version}",
+  "name": "Fishybears",
+  "description": "Makes polar bears more ambient and useful by making them catch fish randomly :D",
+  "authors": [
+    {
+      "name": "GlowSand",
+      "contact": {
+        "discord": "https://www.discord.gg/pj6UVNEZtE"
+      }
+    }
+  ],
+  "contact": {
+    "sources": "https://github.com/GlowSand/fishybears",
+    "discord": "https://www.discord.gg/pj6UVNEZtE",
+    "twitter": "https://twitter.com/_glowsand"
+  },
+  "license": "MIT",
+  "icon": "assets/fishybears/icon.png",
+  "environment": "*",
+  "mixins": [
+    "fishybears.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://www.discord.gg/pj6UVNEZtE",
+        "modmenu.twitter": "https://twitter.com/_glowsand",
+        "modmenu.youtube": "https://www.youtube.com/channel/UCzjtRP_i0WkikO-fGb6JtZA"
+      }
+    }
+  }
+}
