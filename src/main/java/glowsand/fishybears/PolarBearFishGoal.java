@@ -78,7 +78,7 @@ public class PolarBearFishGoal extends MoveToTargetPosGoal {
             LootTable lootTable = this.mob.world.getServer().getLootManager().getTable(LootTables.FISHING_GAMEPLAY);
             List<ItemStack> list = lootTable.generateLoot(builder.build(LootContextTypes.COMMAND));
             for (ItemStack itemStack: list) {
-                if (!itemStack.isIn(ItemTags.FISHES) || this.mob.getRandom().nextInt(3)==1) {
+                if (!itemStack.getItem().isIn(ItemTags.FISHES) || this.mob.getRandom().nextInt(3)==1) {
                     ItemEntity itemEntity = new ItemEntity(this.mob.world, this.targetPos.getX(), this.targetPos.getY(), this.targetPos.getZ(), itemStack);
                     double d = this.mob.getX() - this.targetPos.getX();
                     double e = this.mob.getY() - this.targetPos.getY();
